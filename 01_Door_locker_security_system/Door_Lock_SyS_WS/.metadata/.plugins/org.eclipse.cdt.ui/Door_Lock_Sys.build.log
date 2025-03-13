@@ -1,0 +1,6 @@
+16:09:09 **** Building Selected Files of configuration Debug for project Door_Lock_Sys ****
+Info: Internal Builder is used for build
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -c -o "HMI_ECU\\gpio.o" "..\\HMI_ECU\\gpio.c" 
+
+16:09:09 Build Finished. 0 errors, 0 warnings. (took 198ms)
+

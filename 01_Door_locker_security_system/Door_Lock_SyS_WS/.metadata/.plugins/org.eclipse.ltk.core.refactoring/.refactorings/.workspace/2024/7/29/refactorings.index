@@ -1,0 +1,6 @@
+1721481014621	Delete resource 'Door_Lock_Sys/CONTROL_ECU'
+1721481069797	Rename resource 'Door_Lock_Sys'
+1721481082641	Delete resource 'HMI_ECU/HMI_ECU'
+1721481172803	Delete resource 'CONTROL_ECU'
+1721481229481	Delete resource 'CONTROL_ECU'
+1721497925231	Delete resource 'HMI_ECU/uart.h'

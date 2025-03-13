@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Door_Lock_Sys/HMI_ECU/std_types_HN.h&apos; to &apos;std_types.h&apos;" description="Rename resource &apos;std_types_HN.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HMI_ECU/std_types_HN.h" name="std_types.h" stamp="1720995144617" updateReferences="true"/>
+</session>

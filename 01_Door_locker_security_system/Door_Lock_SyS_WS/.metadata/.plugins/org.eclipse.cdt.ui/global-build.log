@@ -1,0 +1,359 @@
+01:22:19 **** Incremental Build of configuration Release for project HMI_ECU_2 ****
+make all 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:65: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building target: HMI_ECU_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,HMI_ECU_2.map -mmcu=atmega32 -o "HMI_ECU_2.elf"  ./HMI_ECU.o ./gpio.o ./keypad.o ./lcd.o ./timer1.o ./uart.o   
+Finished building target: HMI_ECU_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S HMI_ECU_2.elf  >"HMI_ECU_2.lss"
+Finished building: HMI_ECU_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex HMI_ECU_2.elf  "HMI_ECU_2.hex"
+Finished building: HMI_ECU_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex HMI_ECU_2.elf  "HMI_ECU_2.eep"
+Finished building: HMI_ECU_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3010 bytes (9.2% Full)
+(.text + .data + .bootloader)
+
+Data:        118 bytes (5.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+01:22:20 Build Finished. 0 errors, 1 warnings. (took 661ms)
+
+01:22:20 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:65: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building target: HMI_ECU_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,HMI_ECU_2.map -mmcu=atmega32 -o "HMI_ECU_2.elf"  ./HMI_ECU.o ./gpio.o ./keypad.o ./lcd.o ./timer1.o ./uart.o   
+Finished building target: HMI_ECU_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S HMI_ECU_2.elf  >"HMI_ECU_2.lss"
+Finished building: HMI_ECU_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex HMI_ECU_2.elf  "HMI_ECU_2.hex"
+Finished building: HMI_ECU_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:25 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8296 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:25 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:28 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8296 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:28 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:13 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8296 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:13 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Building file: ../HMI_ECU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HMI_ECU.d" -MT"HMI_ECU.o" -c -o "HMI_ECU.o" "../HMI_ECU.c"
+In file included from ../HMI_ECU.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HMI_ECU.c
+ 
+Building target: HMI_ECU_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,HMI_ECU_2.map -mmcu=atmega32 -o "HMI_ECU_2.elf"  ./HMI_ECU.o ./gpio.o ./keypad.o ./lcd.o ./timer1.o ./uart.o   
+Finished building target: HMI_ECU_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S HMI_ECU_2.elf  >"HMI_ECU_2.lss"
+Finished building: HMI_ECU_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex HMI_ECU_2.elf  "HMI_ECU_2.hex"
+Finished building: HMI_ECU_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:16 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8296 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:17 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:36:20 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8296 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:36:20 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:36:23 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8296 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:36:23 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:03:50 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Building file: ../CONTROL_ECU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CONTROL_ECU.d" -MT"CONTROL_ECU.o" -c -o "CONTROL_ECU.o" "../CONTROL_ECU.c"
+In file included from ../CONTROL_ECU.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CONTROL_ECU.c
+ 
+Building target: CONTROL_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CONTROL_ECU.map -mmcu=atmega32 -o "CONTROL_ECU.elf"  ./CONTROL_ECU.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: CONTROL_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S CONTROL_ECU.elf  >"CONTROL_ECU.lss"
+Finished building: CONTROL_ECU.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex CONTROL_ECU.elf  "CONTROL_ECU.hex"
+Finished building: CONTROL_ECU.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8296 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:03:54 **** Incremental Build of configuration Debug for project HMI_ECU_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11438 bytes (34.9% Full)
+(.text + .data + .bootloader)
+
+Data:        134 bytes (6.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
